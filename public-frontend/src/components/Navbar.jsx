@@ -9,9 +9,7 @@ const Navbar = () => {
   const { navPages } = useSelector((state) => state.publicPages);
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
-  const adminUrl = typeof window !== 'undefined' && (window.location.hostname.includes('github.io') || window.location.pathname.includes('/RenewCred-Frontend-Engineer-Assignment'))
-    ? './admin/'
-    : 'http://localhost:3000';
+  const adminUrl = 'https://renewcred-admin-frontend.onrender.com';
 
   useEffect(() => {
     dispatch(getNavPagesThunk());
