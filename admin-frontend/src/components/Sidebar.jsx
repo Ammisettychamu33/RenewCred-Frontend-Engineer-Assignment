@@ -13,9 +13,7 @@ import {
 const Sidebar = () => {
   const isSidebarOpen = useSelector((state) => state.ui.isSidebarOpen);
 
-  const publicUrl = typeof window !== 'undefined' && (window.location.hostname.includes('github.io') || window.location.pathname.includes('/RenewCred-Frontend-Engineer-Assignment'))
-    ? '../'
-    : 'http://localhost:3001';
+  const publicUrl = 'https://renewcred-frontend-engineer-assignment.onrender.com';
 
   const navItems = [
     { name: 'Dashboard', path: '/dashboard', icon: FiGrid },
