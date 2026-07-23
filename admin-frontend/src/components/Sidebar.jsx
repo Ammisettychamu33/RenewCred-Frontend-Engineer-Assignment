@@ -13,7 +13,7 @@ import {
 const Sidebar = () => {
   const isSidebarOpen = useSelector((state) => state.ui.isSidebarOpen);
 
-  const publicUrl = 'https://renewcred-frontend-engineer-assignment.onrender.com';
+  const publicUrl = 'https://renewcred-public-frontend.onrender.com';
 
   const navItems = [
     { name: 'Dashboard', path: '/dashboard', icon: FiGrid },
